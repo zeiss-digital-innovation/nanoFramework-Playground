@@ -18,7 +18,11 @@
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
+    <Compile Include="Device.cs" />
+    <Compile Include="Infrastructure\NetworkManager.cs" />
     <Compile Include="InstrumentNames.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Infrastructure\MqttManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.Designer.cs">
